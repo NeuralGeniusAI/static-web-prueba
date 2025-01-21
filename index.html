@@ -49,12 +49,13 @@
 
     </style>
 
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
-  import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-  Chatbox.initStandard({
-    agentId: 'cm5h124d10tseppjj4rpgal92',
-  });
+	createChat({
+		webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
+	});
 </script>
 
 <chaindesk-chatbox-standard style="width: 100%; height: 750px" />
