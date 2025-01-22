@@ -6,9 +6,44 @@
     <title>Web de Ejemplo</title>
     <style>
 
-	.chat-header {
-		background-color: #ff0000 !important;
-	}
+  /* Cambiar el fondo del chat */
+  .MuiPaper-root.chaindesk-chatbox-standard-8qf7we {
+      background-color: #f3f4f6 !important; /* Cambia a un gris claro */
+      color: #333 !important; /* Cambia el color del texto */
+      border-radius: 10px !important; /* Redondea los bordes */
+  }
+
+  /* Cambiar el color de los mensajes enviados por el usuario */
+  .MuiChip-root.MuiChip-filledPrimary {
+      background-color: #4CAF50 !important; /* Verde */
+      color: #fff !important; /* Texto blanco */
+  }
+
+  /* Cambiar el color de los mensajes enviados por el bot */
+  .MuiChip-root.MuiChip-filledDefault {
+      background-color: #e0e0e0 !important; /* Gris */
+      color: #000 !important; /* Texto negro */
+  }
+
+  /* Cambiar el color de los botones */
+  .MuiButton-root {
+      background-color: #2196F3 !important; /* Azul */
+      color: #fff !important; /* Texto blanco */
+      border-radius: 5px !important; /* Borde redondeado */
+  }
+
+  /* Cambiar los estilos del input (barra de entrada de texto) */
+  .MuiInputBase-root {
+      background-color: #fff !important; /* Fondo blanco */
+      border: 1px solid #ddd !important; /* Borde gris claro */
+      border-radius: 5px !important; /* Bordes redondeados */
+      padding: 8px !important; /* Espaciado interno */
+  }
+
+  /* Cambiar el placeholder del input */
+  .MuiInputBase-input::placeholder {
+      color: #999 !important; /* Placeholder en gris claro */
+  }
 	    
         body {
             margin: 0;
